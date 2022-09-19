@@ -1,0 +1,248 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.check {
+  margin-left: auto;
+  margin-right: auto;
+  width: 1280px;
+}
+
+body {
+  background-image: linear-gradient(92deg, #a5d8ff, #ffc9c9);
+}
+
+/* Box that contains heading */
+.heading {
+  text-align: center;
+  font-size: 20px;
+  font-family: sans-serif;
+  color: #868e96;
+  margin-top: 10px;
+}
+
+/* Game Heading */
+.game-name {
+  font-weight: normal;
+  text-shadow: 5px 4px 10px #859ebe;
+}
+
+/* Box that contains section and players and all center components (reset, dice img, roll dice, hold*/
+.main-section {
+  height: 490px;
+  margin-top: 30px;
+  position: relative;
+}
+
+/* Box that contains players boards */
+.section {
+  display: grid;
+  grid-template-columns: 350px 350px;
+  height: 490px;
+  justify-content: center;
+}
+
+.player-0 {
+  width: 350px;
+  height: 490px;
+  background-color: #f06595;
+  border-top-left-radius: 20px;
+  border-bottom-left-radius: 20px;
+}
+
+.player-1 {
+  width: 350px;
+  height: 490px;
+  background-color: #f06595;
+  /* #faa2c1 */
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
+}
+
+.reset {
+  position: absolute;
+  top: 20px;
+  right: 575px;
+  width: 140px;
+  height: 45px;
+  background-color: #f1f3f5;
+  border: 0.1px solid #f06595;
+  border-radius: 25px;
+  font-size: 20px;
+  font-family: sans-serif;
+  font-weight: normal;
+  cursor: pointer;
+}
+
+.reset:hover {
+  box-shadow: 2px 1px 10px #e9ecef;
+  margin-top: 2px;
+}
+
+.roll-dice {
+  position: absolute;
+  top: 310px;
+  right: 555px;
+  width: 170px;
+  height: 45px;
+  background-color: #f1f3f5;
+  border: 0.1px solid #f06595;
+  border-radius: 25px;
+  font-size: 20px;
+  font-family: sans-serif;
+  font-weight: normal;
+  cursor: pointer;
+}
+
+.roll-dice:hover {
+  box-shadow: 2px 1px 10px #e9ecef;
+  margin-top: 2px;
+}
+
+.hold {
+  position: absolute;
+  top: 390px;
+  right: 580px;
+  width: 120px;
+  height: 45px;
+  background-color: #f1f3f5;
+  border: 0.1px solid #f06595;
+  border-radius: 25px;
+  font-size: 20px;
+  font-family: sans-serif;
+  font-weight: normal;
+  cursor: pointer;
+}
+
+.hold:hover {
+  box-shadow: 2px 1px 10px #e9ecef;
+  margin-top: 2px;
+}
+
+.dice-image {
+  position: absolute;
+  top: 120px;
+  right: 600px;
+}
+
+.player--0 {
+  position: absolute;
+  top: 70px;
+  right: 750px;
+  font-size: 35px;
+  font-family: sans-serif;
+  font-weight: normal;
+  color: #343a40;
+}
+
+.player--1 {
+  position: absolute;
+  top: 70px;
+  right: 380px;
+  font-size: 35px;
+  font-family: sans-serif;
+  font-weight: normal;
+  color: #343a40;
+}
+
+.main-score-player--0 {
+  position: absolute;
+  top: 140px;
+  right: 830px;
+  font-size: 50px;
+  font-family: sans-serif;
+  font-weight: normal;
+  color: #ed0959;
+}
+
+.main-score-player--1 {
+  position: absolute;
+  top: 140px;
+  right: 455px;
+  font-size: 50px;
+  font-family: sans-serif;
+  font-weight: normal;
+  color: #ed0959;
+}
+
+.score-box-0 {
+  background-color: #ee2f72;
+  width: 190px;
+  height: 90px;
+  border-radius: 10px;
+  text-align: center;
+  line-height: 38px;
+  position: absolute;
+  top: 300px;
+  right: 740px;
+}
+
+.score-box-1 {
+  background-color: #ee2f72;
+  width: 190px;
+  height: 90px;
+  border-radius: 10px;
+  text-align: center;
+  line-height: 38px;
+  position: absolute;
+  top: 300px;
+  right: 350px;
+}
+
+.current-score-note {
+  font-size: 25px;
+  font-family: sans-serif;
+  font-weight: normal;
+  padding-top: 8px;
+  color: white;
+}
+
+.current-score-player--0,
+.current-score-player--1 {
+  font-size: 33px;
+  font-family: sans-serif;
+  font-weight: normal;
+  color: white;
+}
+
+.hold-chances-player--0 {
+  position: absolute;
+  top: 435px;
+  right: 643px;
+  font-size: 30px;
+  font-family: sans-serif;
+  font-weight: normal;
+  border: 3px solid #eb1212;
+  width: 30px;
+  height: 30px;
+  text-align: center;
+  color: #343a40;
+}
+
+.hold-chances-player--1 {
+  position: absolute;
+  top: 435px;
+  right: 600px;
+  font-size: 30px;
+  font-family: sans-serif;
+  font-weight: normal;
+  border: 3px solid #eb1212;
+  width: 30px;
+  height: 30px;
+  text-align: center;
+  color: #343a40;
+}
+
+/* Use when you need these classes */
+.active-player {
+  background-color: #e5a6bc;
+}
+
+.win-msg {
+  background-color: #dbe4ff;
+}
+
+.hidden {
+  display: none;
+}
